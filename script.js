@@ -2,11 +2,17 @@ var slider = document.getElementById("myRange");
 var output = document.getElementById("demo");
 var button = document.getElementById("button");
 var ID = undefined;
-output.innerHTML = 'Keep ' + slider.value  + "%"; // Display the default slider value
+
+function display_text(slider_value){
+    return 'Keep ' + slider_value + "% - Give " + (100 - slider_value) + "%";
+}
+
+output.innerHTML = display_text(slider.value); // Display the default slider value
+
 
 // Update the current slider value (each time you drag the slider handle)
 slider.oninput = function() {
-  output.innerHTML = 'Keep ' + this.value + "%";
+  output.innerHTML = display_text(this.value)
 }
 
 button.onclick = function() {
