@@ -16,7 +16,7 @@ button.onclick = function() {
 
 function publishOffer(offer, id) {
     firebase.database().ref('offers/'+id).set({
-        offer:offer
+        offer
     })
     console.log('sent offer:' + offer);
 }

@@ -1,7 +1,11 @@
 .slidecontainer {
     width: 100%; /* Width of the outside container */
   }
-  
+  @media screen and (min-width:10px) and (max-width:640px) {
+    .leftSideBar{display:none !important;}
+    .rightSideBar{display:none !important;}
+    }
+    
   /* The slider itself */
   .slider {
     -webkit-appearance: none;  /* Override default CSS styles */
