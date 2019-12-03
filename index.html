@@ -1,0 +1,41 @@
+<html> 
+    <link rel="stylesheet" href="all.css">
+
+    <body> 
+            <div class="slidecontainer">
+                    <input type="range" min="0" max="100" value="50" class="slider" id="myRange" step ="5">
+                  </div>
+        <p id = demo></p>
+        <button id = "button" type="button">Send offer</button>
+    </body>
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyADa_8UdScQlz07MycYWVuNer65Kwx0gNU",
+    authDomain: "ultimatumgame-b6275.firebaseapp.com",
+    databaseURL: "https://ultimatumgame-b6275.firebaseio.com",
+    projectId: "ultimatumgame-b6275",
+    storageBucket: "ultimatumgame-b6275.appspot.com",
+    messagingSenderId: "709033228288",
+    appId: "1:709033228288:web:076736ac372998cb9c00e5",
+    measurementId: "G-XW29QX75FB"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+    <script src="script.js"></script>
+</html>
+
+
